@@ -125,7 +125,7 @@ The tool has two layers.
 
 **The signature scheme implementation** is a from-scratch Rust implementation of the SPHINCS+ round-3 construction. It builds bottom-up: tweakable hash primitives (SHAKE256 with the 32-byte ADRS, and SHA-256/SHA-512 with the 22-byte compressed ADRS, both matching the FIPS 205 §11 primitive definitions), WOTS+ one-time signatures, XMSS Merkle trees, the hypertree (d layers of XMSS), FORS few-time signatures, and the top-level sign/verify that composes them. Everything takes `&ParameterSet` at runtime. There are no const generics.
 
-## What the parameters mean
+## Parameters
 
 
 | Parameter | What it controls                                                                                                                                        |
